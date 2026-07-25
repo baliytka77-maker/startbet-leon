@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фрибет 2 000 ₽ в БК Леон — за регистрацию и депозит</title>
+<meta name="description" content="Инструкция: как получить 2 000 ₽ фрибетами в БК Леон новым игрокам за регистрацию и первую ставку.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900&family=Roboto+Condensed:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#D71015;
+  --red-dark:#A80C10;
+  --black:#0C1013;
+  --card:#15191E;
+  --card-2:#1B2026;
+  --gray-d:#33363C;
+  --gray-l:#6B737C;
+  --white:#FFFFFF;
+  --yellow:#FDC000;
+  --green:#1DA94F;
+  --radius:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Roboto',Arial,sans-serif;
+  background:var(--black);
+  color:var(--white);
+  line-height:1.55;
+  overflow-x:hidden;
+}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+img,svg{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+
+/* ---------- типографика бренда ---------- */
+.h-brand{
+  font-family:'Roboto Condensed',sans-serif;
+  font-style:italic;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:-.5px;
+  line-height:1.02;
+  transform:skewX(-2deg);
+}
+.tilt{transform:rotate(-1.5deg)}
+
+/* ---------- шапка ---------- */
+header{
+  border-bottom:1px solid #1E242B;
+  background:var(--black);
+  position:sticky;top:0;z-index:50;
+}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-slogan{
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:700;
+  text-transform:uppercase;font-size:12px;letter-spacing:.4px;color:var(--gray-l);
+  border-left:2px solid var(--red);padding-left:12px;
+}
+.age{
+  border:2px solid var(--gray-d);color:var(--gray-l);
+  font-weight:900;font-size:13px;border-radius:50%;
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;flex:none;
+}
+
+/* ---------- герой ---------- */
+.hero{position:relative;padding:52px 0 60px;overflow:hidden}
+.hero::before{ /* красная диагональная плашка справа */
+  content:"";position:absolute;top:-80px;right:-220px;width:560px;height:150%;
+  background:var(--red);transform:rotate(14deg);z-index:0;
+}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;background:var(--card);
+  border:1px solid #232A31;border-radius:999px;padding:7px 16px;
+  font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--yellow);
+  margin-bottom:20px;
+}
+.hero h1{font-size:clamp(38px,6vw,68px);margin-bottom:6px}
+.hero h1 .sum{color:var(--yellow)}
+.hero .sub{
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:700;text-transform:uppercase;
+  font-size:clamp(18px,2.6vw,26px);color:#C7CDD4;margin-bottom:26px;
+}
+.checks{display:flex;flex-direction:column;gap:10px;margin-bottom:30px}
+.check{display:flex;align-items:center;gap:11px;font-size:16px;font-weight:500;color:#DFE4E9}
+.check svg{flex:none}
+
+/* ---------- кнопки ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;
+  font-size:19px;letter-spacing:.3px;
+  padding:17px 34px;border-radius:14px;
+  transition:transform .12s ease,box-shadow .12s ease;
+  position:relative;overflow:hidden;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-yellow{background:var(--yellow);color:var(--black);box-shadow:0 6px 0 #C79700}
+.btn-yellow:hover{box-shadow:0 8px 0 #C79700}
+.btn-red{background:var(--red);color:var(--white);box-shadow:0 6px 0 var(--red-dark)}
+.btn-red:hover{box-shadow:0 8px 0 var(--red-dark)}
+.btn-ghost{border:2px solid var(--gray-d);color:var(--white)}
+
+/* иллюстрация в герое */
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:min(360px,80vw);height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+
+/* ---------- заголовки секций ---------- */
+.sec{padding:64px 0}
+.sec-head{margin-bottom:34px}
+.sec-head .tag{
+  display:inline-block;background:var(--red);color:#fff;
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;
+  font-size:14px;letter-spacing:1px;padding:5px 14px;border-radius:6px;margin-bottom:14px;
+  transform:rotate(-2deg);
+}
+.sec-head h2{font-size:clamp(28px,4.4vw,44px)}
+.sec-head p{color:var(--gray-l);margin-top:8px;font-size:17px}
+
+/* ---------- бенто-сетка шагов ---------- */
+.bento{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{
+  background:var(--card);border:1px solid #20262D;border-radius:var(--radius);
+  padding:30px 28px;position:relative;overflow:hidden;
+}
+.step-num{
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;
+  font-size:64px;line-height:1;color:transparent;
+  -webkit-text-stroke:2px var(--red);margin-bottom:14px;
+}
+.card h3{font-size:21px;font-weight:700;margin-bottom:10px}
+.card p{color:#B9C0C7;font-size:16px}
+.card .foot{margin-top:14px;font-size:14px;color:var(--gray-l)}
+.chip{
+  display:inline-block;font-weight:900;font-size:15px;
+  padding:3px 12px;border-radius:9px;white-space:nowrap;
+}
+.chip-green{background:var(--green);color:#fff}
+.chip-red{background:var(--red);color:#fff}
+.chip-yellow{background:var(--yellow);color:var(--black)}
+.chip-dark{background:#242B33;color:#fff;border:1px solid #333C46}
+.card-ball{position:absolute;right:-28px;bottom:-28px;width:120px;opacity:.07}
+
+/* ---------- FOMO ---------- */
+.fomo{background:var(--red);position:relative;overflow:hidden;padding:46px 0}
+.fomo::before,.fomo::after{
+  content:"";position:absolute;left:0;right:0;height:26px;background:var(--black);
+}
+.fomo::before{top:-14px;transform:skewY(-1.2deg)}
+.fomo::after{bottom:-14px;transform:skewY(-1.2deg)}
+.fomo-inner{display:flex;align-items:center;gap:26px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.fomo-icon{flex:none}
+.fomo-text{text-align:left}
+.fomo-text .big{font-size:clamp(26px,4.5vw,42px);color:#fff}
+.fomo-text .big em{font-style:italic;color:var(--yellow)}
+.fomo-text .small{color:#FFD9DA;font-size:16px;margin-top:6px;max-width:520px}
+
+/* ---------- большая CTA с лого на фоне ---------- */
+.cta-block{position:relative;text-align:center;padding:70px 20px;overflow:hidden;
+  background:var(--card);border:1px solid #20262D;border-radius:var(--radius);}
+.cta-block .watermark{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;
+  font-size:clamp(120px,22vw,230px);color:transparent;-webkit-text-stroke:1.5px #232A31;
+  text-transform:uppercase;user-select:none;pointer-events:none;letter-spacing:-4px;
+}
+.cta-block .inner{position:relative;z-index:1}
+.cta-block .lead{
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:700;text-transform:uppercase;
+  color:#C7CDD4;font-size:19px;margin-bottom:20px;
+}
+
+/* ---------- ТОП-блок с лентой ---------- */
+.top-card{
+  background:var(--card-2);border:1px solid #2A323B;border-radius:var(--radius);
+  padding:38px 40px 38px 40px;position:relative;overflow:hidden;
+  display:flex;align-items:center;gap:26px;
+}
+.ribbon{
+  position:absolute;top:22px;right:-44px;transform:rotate(45deg);
+  background:var(--red);color:#fff;
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;
+  font-size:15px;letter-spacing:2px;padding:7px 54px;
+  box-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+.top-card .txt{font-size:clamp(19px,2.6vw,24px);font-weight:700;line-height:1.4}
+.top-card .txt .hl{color:var(--yellow)}
+.top-card .medal{flex:none}
+
+/* ---------- условия ---------- */
+.cond-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:16px}
+.cond-card{background:var(--card);border:1px solid #20262D;border-radius:var(--radius);padding:28px;text-align:left}
+.cond-card .ico{margin-bottom:18px}
+.cond-card h3{font-size:19px;margin-bottom:8px}
+.cond-card p{color:#B9C0C7;font-size:15px}
+.note{
+  background:var(--card);border:1px solid #20262D;border-left:4px solid var(--yellow);
+  border-radius:14px;padding:18px 22px;color:#D6DBE0;font-size:15px;
+}
+
+/* ---------- как это работает ---------- */
+.flow{display:flex;flex-direction:column;gap:0;max-width:640px;margin:0 auto}
+.flow-step{display:flex;gap:20px}
+.flow-rail{display:flex;flex-direction:column;align-items:center;flex:none;width:44px}
+.flow-dot{
+  width:44px;height:44px;border-radius:50%;background:var(--card-2);border:2px solid var(--red);
+  display:flex;align-items:center;justify-content:center;flex:none;
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;color:var(--yellow);font-size:18px;
+}
+.flow-line{width:2px;flex:1;background:repeating-linear-gradient(#33363C 0 6px,transparent 6px 12px);margin:6px 0}
+.flow-body{padding:6px 0 34px;font-size:17px;color:#DFE4E9}
+.flow-step:last-child .flow-body{padding-bottom:6px}
+.flow-step:last-child .flow-line{display:none}
+
+/* ---------- слоган ---------- */
+.slogan{
+  text-align:center;padding:70px 20px;position:relative;overflow:hidden;
+}
+.slogan .lines{position:absolute;inset:0;pointer-events:none}
+.slogan .lines span{position:absolute;height:8px;background:var(--red);transform:rotate(-14deg)}
+.slogan .lines span:nth-child(1){width:190px;left:-40px;top:36px}
+.slogan .lines span:nth-child(2){width:110px;left:-40px;top:60px;background:var(--yellow)}
+.slogan .lines span:nth-child(3){width:190px;right:-40px;bottom:46px}
+.slogan .lines span:nth-child(4){width:110px;right:-40px;bottom:22px;background:var(--yellow)}
+.slogan h2{font-size:clamp(26px,4.6vw,44px);max-width:820px;margin:0 auto 14px}
+.slogan .brand-line{
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;
+  color:var(--red);letter-spacing:1px;font-size:clamp(17px,2.4vw,22px);
+}
+
+/* ---------- ИИ-аналитик ---------- */
+.ai{background:var(--card);border:1px solid #20262D;border-radius:var(--radius);overflow:hidden;
+  display:grid;grid-template-columns:1.2fr .8fr}
+.ai-left{padding:44px 42px}
+.free-badge{
+  display:inline-block;background:var(--yellow);color:var(--black);
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;
+  padding:5px 14px;border-radius:7px;font-size:15px;letter-spacing:1px;transform:rotate(-2deg);
+  margin-bottom:16px;
+}
+.ai-left h2{font-size:clamp(26px,3.6vw,36px);margin-bottom:14px}
+.ai-left p{color:#B9C0C7;font-size:16px;margin-bottom:12px}
+.ai-left p b{color:#fff}
+.ai-btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.ai-right{
+  background:var(--card-2);border-left:1px solid #20262D;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;gap:6px;
+}
+.ai-right .pct{
+  font-family:'Roboto Condensed',sans-serif;font-style:italic;font-weight:800;
+  font-size:clamp(72px,9vw,104px);line-height:1;color:var(--yellow);
+}
+.ai-right .cap{color:var(--gray-l);font-size:15px;text-align:center;max-width:220px}
+.ai-right .bars{display:flex;align-items:flex-end;gap:6px;height:46px;margin-top:18px}
+.ai-right .bars i{width:12px;background:var(--gray-d);border-radius:3px}
+.ai-right .bars i.on{background:var(--green)}
+
+/* ---------- футер ---------- */
+footer{border-top:1px solid #1E242B;padding:34px 0 44px;color:var(--gray-l);font-size:13px}
+.foot-top{display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+footer p{margin-bottom:8px;max-width:820px}
+
+/* ---------- адаптив ---------- */
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero::before{right:-380px}
+  .hero-art{order:-1}
+  .hero-art svg{width:min(240px,60vw)}
+  .cond-grid{grid-template-columns:1fr}
+  .ai{grid-template-columns:1fr}
+  .ai-right{border-left:none;border-top:1px solid #20262D}
+  .bento{grid-template-columns:1fr}
+  .top-card{flex-direction:column;text-align:center;padding-top:64px}
+  .ribbon{top:16px;right:-56px;font-size:13px;padding:6px 60px}
+  .logo-slogan{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= ШАПКА ================= -->
+<header>
+  <div class="wrap topbar">
+    <div class="logo">
+      <!-- LEON: мяч вместо O -->
+      <svg width="118" height="34" viewBox="0 0 118 34" aria-label="LEON">
+        <text x="0" y="28" font-family="'Roboto Condensed',sans-serif" font-style="italic" font-weight="800" font-size="32" fill="#fff" letter-spacing="-1.5">LE</text>
+        <g transform="translate(53,18)">
+          <circle r="12" fill="#FDC000"/>
+          <polygon points="0,-4.6 4.4,-1.4 2.7,3.7 -2.7,3.7 -4.4,-1.4" fill="#0C1013"/>
+          <path d="M0,-12 L0,-4.6 M4.4,-1.4 L11.4,-3.7 M2.7,3.7 L7,9.8 M-2.7,3.7 L-7,9.8 M-4.4,-1.4 L-11.4,-3.7" stroke="#0C1013" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        </g>
+        <text x="70" y="28" font-family="'Roboto Condensed',sans-serif" font-style="italic" font-weight="800" font-size="32" fill="#fff" letter-spacing="-1.5">N</text>
+      </svg>
+      <div class="logo-slogan">Спорт всегда<br>с тобой</div>
+    </div>
+    <div class="age">18+</div>
+  </div>
+</header>
+
+<!-- ================= ГЕРОЙ ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">
+        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 0l1.8 4.6L14 5.3l-3.5 3.2.9 5L7 11l-4.4 2.5.9-5L0 5.3l5.2-.7z" fill="#FDC000"/></svg>
+        Акция для новых игроков
+      </span>
+      <h1 class="h-brand"><span class="sum">2&nbsp;000&nbsp;₽</span> фрибетами<br>в БК Леон</h1>
+      <div class="sub">За регистрацию и депозит</div>
+      <div class="checks">
+        <div class="check">
+          <svg width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#1DA94F"/><path d="M6 11.5l3.2 3.2L16 8" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Легальный букмекер в России
+        </div>
+        <div class="check">
+          <svg width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#1DA94F"/><path d="M6 11.5l3.2 3.2L16 8" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Имеет официальную лицензию
+        </div>
+      </div>
+      <a class="btn btn-yellow" href="https://betsxwin.pro/click?o=227&a=50603&link_id=1376&sub_id1=4721&sub_id2=7&sub_id3=sms" target="_blank" rel="nofollow noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="9" width="18" height="12" rx="2" fill="#0C1013"/><rect x="3" y="9" width="18" height="4" fill="#0C1013"/><rect x="10.5" y="9" width="3" height="12" fill="#FDC000" stroke="#0C1013" stroke-width=".8"/><path d="M12 9c-3.5 0-5.5-1.5-5.5-3.2C6.5 4.2 7.7 3 9.2 3 11 3 12 5 12 9zm0 0c3.5 0 5.5-1.5 5.5-3.2C17.5 4.2 16.3 3 14.8 3 13 3 12 5 12 9z" fill="#0C1013"/></svg>
+        Перейти к акции
+      </a>
+    </div>
+
+    <!-- иллюстрация: футболист в ударе -->
+    <div class="hero-art">
+      <svg viewBox="0 0 340 340" fill="none" aria-hidden="true">
+        <!-- динамические линии -->
+        <path d="M20 250 L120 250" stroke="#D71015" stroke-width="8" stroke-linecap="round"/>
+        <path d="M8 272 L86 272" stroke="#33363C" stroke-width="8" stroke-linecap="round"/>
+        <path d="M250 60 L318 60" stroke="#33363C" stroke-width="8" stroke-linecap="round"/>
+        <path d="M270 84 L330 84" stroke="#FDC000" stroke-width="8" stroke-linecap="round"/>
+        <!-- футболист в стиле олимпийской пиктограммы -->
+        <g stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" fill="none">
+          <path d="M215 98 L185 170"/><!-- корпус -->
+          <path d="M212 104 L162 132"/><!-- передняя рука -->
+          <path d="M212 104 L258 142"/><!-- задняя рука -->
+          <path d="M185 170 L140 222 L112 268"/><!-- бьющая нога к мячу -->
+          <path d="M185 170 L218 234 L204 298"/><!-- опорная нога -->
+        </g>
+        <circle cx="228" cy="62" r="23" fill="#FFFFFF"/><!-- голова -->
+        <!-- мяч -->
+        <g transform="translate(84 292)">
+          <circle r="30" fill="#FFFFFF"/>
+          <polygon points="0,-12 11.4,-3.7 7,9.7 -7,9.7 -11.4,-3.7" fill="#0C1013"/>
+          <path d="M0,-30 L0,-12 M11.4,-3.7 L28.5,-9.3 M7,9.7 L17.6,24.3 M-7,9.7 L-17.6,24.3 M-11.4,-3.7 L-28.5,-9.3" stroke="#0C1013" stroke-width="3"/>
+          <circle r="30" fill="none" stroke="#0C1013" stroke-width="3"/>
+        </g>
+        <!-- след мяча -->
+        <path d="M130 300 C160 296 190 284 214 262" stroke="#FDC000" stroke-width="5" stroke-dasharray="2 12" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ШАГИ ================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Инструкция</span>
+      <h2 class="h-brand">Как получить фрибет</h2>
+      <p>Четыре простых шага — и 2&nbsp;000&nbsp;₽ фрибетами твои.</p>
+    </div>
+    <div class="bento">
+      <div class="card">
+        <div class="step-num">01</div>
+        <h3>Зарегистрируйся в БК Леон</h3>
+        <p>Переходи по акционной ссылке и создай аккаунт — это займёт пару минут.</p>
+        <svg class="card-ball" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" stroke="#fff" stroke-width="3" fill="none"/><polygon points="50,30 69,44 62,66 38,66 31,44" fill="#fff"/></svg>
+      </div>
+      <div class="card">
+        <div class="step-num">02</div>
+        <h3>Прими участие в акции</h3>
+        <p>Нажми «Принять участие» на странице акции «Приветственный бонус».</p>
+      </div>
+      <div class="card">
+        <div class="step-num">03</div>
+        <h3>Пополни баланс</h3>
+        <p>Депозит — от <span class="chip chip-green">500&nbsp;₽</span>, для получения фрибета — от <span class="chip chip-red">2&nbsp;000&nbsp;₽</span>.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">04</div>
+        <h3>Сделай первую ставку</h3>
+        <p>Поставь от <span class="chip chip-red">2&nbsp;000&nbsp;₽</span> в течение <b>7 дней</b> после регистрации.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOMO ================= -->
+<section class="fomo">
+  <div class="wrap fomo-inner">
+    <div class="fomo-icon">
+      <svg width="92" height="92" viewBox="0 0 92 92" fill="none">
+        <circle cx="46" cy="50" r="34" fill="#0C1013"/>
+        <circle cx="46" cy="50" r="34" stroke="#fff" stroke-width="5"/>
+        <path d="M46 30v20l14 9" stroke="#FDC000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M32 10l-14 12M60 10l14 12" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+        <path d="M76 22l6-6M16 22l-6-6" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="fomo-text">
+      <div class="big h-brand">Фрибеты сгорят <em>31 мая</em></div>
+      <div class="small">Успей зарегистрироваться и забрать 2&nbsp;000&nbsp;₽, пока акция не закончилась. Потом такого бонуса не будет.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= БОЛЬШАЯ CTA ================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="cta-block">
+      <div class="watermark">Leon</div>
+      <div class="inner">
+        <div class="lead">Регистрация занимает 2 минуты</div>
+        <a class="btn btn-red" href="https://betsxwin.pro/click?o=227&a=50603&link_id=1376&sub_id1=4721&sub_id2=7&sub_id3=sms" target="_blank" rel="nofollow noopener" style="font-size:22px;padding:20px 44px">
+          Получить фрибет 2&nbsp;000&nbsp;₽
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ТОП-БЛОК ================= -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="top-card">
+      <div class="ribbon">Топ</div>
+      <div class="medal">
+        <svg width="74" height="74" viewBox="0 0 74 74" fill="none">
+          <path d="M24 4h26l-8 24H30z" fill="#D71015"/>
+          <path d="M14 4h14l-7 22z" fill="#A80C10"/>
+          <path d="M60 4H46l7 22z" fill="#A80C10"/>
+          <circle cx="37" cy="48" r="22" fill="#FDC000"/>
+          <circle cx="37" cy="48" r="16" fill="none" stroke="#0C1013" stroke-width="2.5"/>
+          <path d="M37 39l2.8 5.7 6.2.9-4.5 4.4 1 6.2-5.5-2.9-5.5 2.9 1-6.2-4.5-4.4 6.2-.9z" fill="#0C1013"/>
+        </svg>
+      </div>
+      <div class="txt">
+        Фрибеты начислятся после первой ставки <span class="hl">вне зависимости от исхода</span> — даже если ставка проиграет!
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= УСЛОВИЯ ================= -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Условия</span>
+      <h2 class="h-brand">Всё просто</h2>
+    </div>
+    <div class="cond-grid">
+      <div class="cond-card">
+        <div class="ico">
+          <svg width="54" height="54" viewBox="0 0 54 54" fill="none">
+            <rect x="3" y="3" width="48" height="48" rx="12" fill="#D71015"/>
+            <circle cx="27" cy="27" r="13" fill="#fff"/>
+            <polygon points="27,19 34.6,24.5 31.7,33.5 22.3,33.5 19.4,24.5" fill="#0C1013"/>
+            <circle cx="42" cy="13" r="5" fill="#FDC000"/>
+          </svg>
+        </div>
+        <h3>Ставь <span class="chip chip-red">2&nbsp;000&nbsp;₽</span></h3>
+        <p>На любые дисциплины в лайв-режиме — футбол, теннис, киберспорт и не только.</p>
+      </div>
+      <div class="cond-card">
+        <div class="ico">
+          <svg width="54" height="54" viewBox="0 0 54 54" fill="none">
+            <rect x="3" y="3" width="48" height="48" rx="12" fill="#33363C"/>
+            <path d="M13 38 L24 27 L31 33 L42 18" stroke="#FDC000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M42 18h-8M42 18v8" stroke="#FDC000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Коэффициент <span class="chip chip-yellow">1.70–3.00</span></h3>
+        <p>Выбирай событие с коэффициентом в этом диапазоне.</p>
+      </div>
+      <div class="cond-card">
+        <div class="ico">
+          <svg width="54" height="54" viewBox="0 0 54 54" fill="none">
+            <rect x="3" y="3" width="48" height="48" rx="12" fill="#FDC000"/>
+            <rect x="12" y="24" width="30" height="18" rx="3" fill="#0C1013"/>
+            <rect x="12" y="24" width="30" height="6" fill="#0C1013"/>
+            <rect x="24.5" y="24" width="5" height="18" fill="#FDC000"/>
+            <path d="M27 24c-5 0-8-2-8-4.5S20.5 15 23 15c3 0 4 4.5 4 9zm0 0c5 0 8-2 8-4.5S33.5 15 31 15c-3 0-4 4.5-4 9z" fill="#0C1013"/>
+          </svg>
+        </div>
+        <h3>Забирай фрибет</h3>
+        <p>2&nbsp;000&nbsp;₽ фрибетами придут на счёт автоматически.</p>
+      </div>
+    </div>
+    <div class="note">
+      В случае победы чистый выигрыш (сумма выплаты за вычетом суммы фрибета) поступает на твой игровой счёт.
+    </div>
+  </div>
+</section>
+
+<!-- ================= КАК ЭТО РАБОТАЕТ ================= -->
+<section class="sec" style="background:#0F1418">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center">
+      <span class="tag">Пример</span>
+      <h2 class="h-brand">Как это работает</h2>
+    </div>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-rail"><div class="flow-dot">1</div><div class="flow-line"></div></div>
+        <div class="flow-body">Ставишь <span class="chip chip-red">2&nbsp;000&nbsp;₽</span> на коэффициент <span class="chip chip-dark">2.00</span></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-rail"><div class="flow-dot">2</div><div class="flow-line"></div></div>
+        <div class="flow-body">Выигрыш составит <span class="chip chip-green">4&nbsp;000&nbsp;₽</span> — чистый выигрыш после вычета суммы фрибета = <span class="chip chip-green">2&nbsp;000&nbsp;₽</span></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-rail"><div class="flow-dot">3</div><div class="flow-line"></div></div>
+        <div class="flow-body">Вывод доступен <b>на карту любого банка</b> после выполнения всех условий акции</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= СЛОГАН ================= -->
+<section class="slogan">
+  <div class="lines"><span></span><span></span><span></span><span></span></div>
+  <h2 class="h-brand">Поддерживай своих фаворитов и наслаждайся просмотром матчей вместе с Леон</h2>
+  <div class="brand-line">Неважно где — всегда в игре</div>
+</section>
+
+<!-- ================= ИИ-АНАЛИТИК ================= -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="ai">
+      <div class="ai-left">
+        <span class="free-badge">Бесплатно</span>
+        <h2 class="h-brand">Не знаешь, куда поставить фрибет?</h2>
+        <p>Обратись к <b>бесплатному спортивному аналитику</b> на базе искусственного интеллекта.</p>
+        <p>Он анализирует <b>больше 1&nbsp;000 показателей</b> статистики и собирает информацию по всему интернету — объём данных, который не под силу проанализировать человеку.</p>
+        <div class="ai-btns">
+          <a class="btn btn-red" href="https://betsxwin.pro/click?o=227&a=50603&link_id=1376&sub_id1=4721&sub_id2=7&sub_id3=sms" target="_blank" rel="nofollow noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z" fill="#FDC000"/></svg>
+            Получить прогноз
+          </a>
+          <a class="btn btn-yellow" href="https://betsxwin.pro/click?o=227&a=50603&link_id=1376&sub_id1=4721&sub_id2=7&sub_id3=sms" target="_blank" rel="nofollow noopener">
+            Забрать фрибет 2&nbsp;000&nbsp;₽
+          </a>
+        </div>
+      </div>
+      <div class="ai-right">
+        <div class="pct">86%</div>
+        <div class="cap">средняя проходимость прогнозов за последние 30 дней</div>
+        <div class="bars" aria-hidden="true">
+          <i style="height:40%" class="on"></i><i style="height:60%" class="on"></i><i style="height:35%"></i><i style="height:75%" class="on"></i><i style="height:55%" class="on"></i><i style="height:90%" class="on"></i><i style="height:45%"></i><i style="height:100%" class="on"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ФУТЕР ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="age">18+</div>
+      <b style="color:#9AA3AC">Играй ответственно</b>
+    </div>
+    <p>БК «Леон» — легальный букмекер, имеет официальную лицензию ФНС России. Участие в азартных играх может вызвать игровую зависимость. Соблюдайте правила и играйте ответственно.</p>
+    <p>Материал носит информационный характер. Условия акции могут меняться — актуальные правила смотри на сайте букмекера.</p>
+  </div>
+</footer>
+
+</body>
+</html>
