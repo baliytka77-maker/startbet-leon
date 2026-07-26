@@ -325,29 +325,28 @@ footer p{margin-bottom:8px;max-width:820px}
     <!-- иллюстрация: футболист в ударе -->
     <div class="hero-art">
       <svg viewBox="0 0 340 340" fill="none" aria-hidden="true">
-        <!-- динамические линии -->
-        <path d="M20 250 L120 250" stroke="#D71015" stroke-width="8" stroke-linecap="round"/>
-        <path d="M8 272 L86 272" stroke="#33363C" stroke-width="8" stroke-linecap="round"/>
-        <path d="M250 60 L318 60" stroke="#33363C" stroke-width="8" stroke-linecap="round"/>
-        <path d="M270 84 L330 84" stroke="#FDC000" stroke-width="8" stroke-linecap="round"/>
-        <!-- футболист в стиле олимпийской пиктограммы -->
-        <g stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" fill="none">
-          <path d="M215 98 L185 170"/><!-- корпус -->
-          <path d="M212 104 L162 132"/><!-- передняя рука -->
-          <path d="M212 104 L258 142"/><!-- задняя рука -->
-          <path d="M185 170 L140 222 L112 268"/><!-- бьющая нога к мячу -->
-          <path d="M185 170 L218 234 L204 298"/><!-- опорная нога -->
+        <!-- линии скорости за спиной -->
+        <path d="M18 120 L98 120" stroke="#33363C" stroke-width="8" stroke-linecap="round"/>
+        <path d="M34 146 L112 146" stroke="#D71015" stroke-width="8" stroke-linecap="round"/>
+        <path d="M12 172 L82 172" stroke="#FDC000" stroke-width="8" stroke-linecap="round"/>
+        <!-- пунктирный след мяча по земле -->
+        <path d="M104 320 C166 322 222 314 248 300" stroke="#FDC000" stroke-width="5" stroke-dasharray="2 12" stroke-linecap="round"/>
+        <!-- футболист: бег вперёд, мяч перед ногой -->
+        <g stroke="#FFFFFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M186 98 L160 172"/><!-- корпус с наклоном вперёд -->
+          <path d="M182 104 L232 140"/><!-- передняя рука -->
+          <path d="M184 106 L134 138"/><!-- задняя рука -->
+          <path d="M160 172 L212 218 L246 266"/><!-- нога ведёт мяч -->
+          <path d="M160 172 L136 240 L104 290"/><!-- опорная нога сзади -->
         </g>
-        <circle cx="228" cy="62" r="23" fill="#FFFFFF"/><!-- голова -->
-        <!-- мяч -->
-        <g transform="translate(84 292)">
-          <circle r="30" fill="#FFFFFF"/>
-          <polygon points="0,-12 11.4,-3.7 7,9.7 -7,9.7 -11.4,-3.7" fill="#0C1013"/>
-          <path d="M0,-30 L0,-12 M11.4,-3.7 L28.5,-9.3 M7,9.7 L17.6,24.3 M-7,9.7 L-17.6,24.3 M-11.4,-3.7 L-28.5,-9.3" stroke="#0C1013" stroke-width="3"/>
-          <circle r="30" fill="none" stroke="#0C1013" stroke-width="3"/>
+        <circle cx="197" cy="62" r="23" fill="#FFFFFF"/><!-- голова впереди корпуса -->
+        <!-- мяч впереди, перед ногой -->
+        <g transform="translate(278 300)">
+          <circle r="28" fill="#FFFFFF"/>
+          <polygon points="0,-11.2 10.6,-3.4 6.5,9 -6.5,9 -10.6,-3.4" fill="#0C1013"/>
+          <path d="M0,-28 L0,-11.2 M10.6,-3.4 L26.5,-8.7 M6.5,9 L16.4,22.6 M-6.5,9 L-16.4,22.6 M-10.6,-3.4 L-26.5,-8.7" stroke="#0C1013" stroke-width="3"/>
+          <circle r="28" fill="none" stroke="#0C1013" stroke-width="3"/>
         </g>
-        <!-- след мяча -->
-        <path d="M130 300 C160 296 190 284 214 262" stroke="#FDC000" stroke-width="5" stroke-dasharray="2 12" stroke-linecap="round"/>
       </svg>
     </div>
   </div>
@@ -372,16 +371,19 @@ footer p{margin-bottom:8px;max-width:820px}
         <div class="step-num">02</div>
         <h3>Прими участие в акции</h3>
         <p>Нажми «Принять участие» на странице акции «Приветственный бонус».</p>
+        <svg class="card-ball" style="transform:rotate(40deg)" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" stroke="#fff" stroke-width="3" fill="none"/><polygon points="50,30 69,44 62,66 38,66 31,44" fill="#fff"/></svg>
       </div>
       <div class="card">
         <div class="step-num">03</div>
         <h3>Пополни баланс</h3>
         <p>Депозит — от <span class="chip chip-green">500&nbsp;₽</span>, для получения фрибета — от <span class="chip chip-red">2&nbsp;000&nbsp;₽</span>.</p>
+        <svg class="card-ball" style="transform:rotate(-25deg)" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" stroke="#fff" stroke-width="3" fill="none"/><polygon points="50,30 69,44 62,66 38,66 31,44" fill="#fff"/></svg>
       </div>
       <div class="card">
         <div class="step-num">04</div>
         <h3>Сделай первую ставку</h3>
         <p>Поставь от <span class="chip chip-red">2&nbsp;000&nbsp;₽</span> в течение <b>7 дней</b> после регистрации.</p>
+        <svg class="card-ball" style="transform:rotate(70deg)" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" stroke="#fff" stroke-width="3" fill="none"/><polygon points="50,30 69,44 62,66 38,66 31,44" fill="#fff"/></svg>
       </div>
     </div>
   </div>
